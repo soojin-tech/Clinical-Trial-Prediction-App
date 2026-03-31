@@ -1,0 +1,22 @@
+# 모든 데이터 파일 제외 (대소문자 무시)
+*[cC][sS][vV]
+*[xX][lL][sS][xX]
+*.zip
+*.pdf
+*.xml
+*.sas
+*.json
+*.pkl
+*.h5
+
+# 폴더 통째로 제외
+**/data/
+**/icdcode/
+**/temp/
+
+# 가상환경 및 캐시
+.venv/
+hint_env/
+ct_study/
+**/__pycache__/
+.ipynb_checkpoints/
