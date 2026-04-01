@@ -21,4 +21,9 @@
 
 1. **가상환경 활성화**
    ```bash
+   cd app_streamlit
+   -- 모델 다운로드(models)
+   conda create --name ct_study python=3.11
    conda activate ct_study
+   pip install requirements_ml.txt
+   streamlit run merge_app.py
