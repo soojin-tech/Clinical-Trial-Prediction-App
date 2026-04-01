@@ -15,6 +15,9 @@
 
 ### 2. 백엔드 실행 (FastAPI)
 ```bash
-cd app_fastapi
-conda activate hint_env
-uvicorn app:app --reload --port 8000
+cd app_streamlit
+-- 모델 다운로드(models)
+conda create --name ct_study python=3.11
+conda activate ct_study
+pip install requirements_ml.txt
+streamlit run merge_app.py
