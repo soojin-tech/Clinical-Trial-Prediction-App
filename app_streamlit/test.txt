@@ -1,0 +1,45 @@
+HINT 모델 테스트용 샘플 데이터
+- Phase3
+- Diseases: Chronic Obstructive Pulmonary Disease (COPD) 
+- ICD-10 Codes: J44.9 (상세불명의 만성 폐쇄성 폐질환)
+- Drugs: Roflumilast
+- SMILES: CONC(=O)C1=CC(=C(C=C1)OCC(F)F)OC2=C(C=CC=N2)Cl
+- Protocol Criteria
+- Inclusion Criteria: 
+    - Patients must be 40 to 75 years of age.
+    - Diagnosis of COPD for at least 12 months.
+    - Post-bronchodilator FEV1/FVC ratio < 0.70.
+    - History of at least two clinical exacerbations of COPD within the previous year.
+
+Exclusion Criteria:
+    - Patients with a diagnosis of asthma or lung cancer.
+    - Current use of other phosphodiesterase-4 inhibitors.
+    - Known hypersensitivity to roflumilast or any of its excipients.
+    - Severe hepatic impairment (Child-Pugh B or C).
+
+
+ML모델 테스트용 샘플 데이터
+1. Trial Design Details (시험 설계 상세)
+- Phase: Phase 3 
+- Intervention Type: Drug 
+- Condition: Respiratory Tract Diseases (호흡기 질환)
+- Allocation: Randomized (3상 임상의 표준은 무작위 배정)
+- Masking: Double (환자와 의사 모두 모르는 이중맹검)
+- Study Model: Parallel Assignment (대조군과 시험군을 평행하게 비교하는 일반적인 방식)
+- Study Purpose: Treatment (치료 효과 확인)
+- Sponsor Type: Industry
+- Age / Gender: Adult / All
+
+2. Numerical Inputs (수치 데이터)
+- Enrollment (등록인원수): 1500 (대규모 3상의 일반적 인원)
+- Duration (연구기간): 365 (약 1년 정도의 추적 관찰)
+- Number of Arms (시험군/대조군 수): 2 (약물 투여군 vs 플라세보 대조군)
+- Intervention Count (중재 갯수): 1 (로플루밀라스트 단일 약물 테스트)
+
+3. Flags (주요 지표 설정)
+- Has DMC (데이터 모니터링 위원회): Yes 
+- Has expanded access (확대 적용 여부): No 
+- Is fda regulated drug (FDA 규제 약물): Yes 
+- Is fda regulated device (FDA 규제 기기): No
+- Healthy volunteers (건강한 지원자): No 
+- Has Multiple Intervention Types (복합치료): No 
